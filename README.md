@@ -1,4 +1,5 @@
 # Dockerfile para configurar un servidor de Code-Server con extensiones de VS Code
+![VsCode Web](https://i.ibb.co/DYbq1Pg/Captura2.png)
 
 Este Dockerfile está diseñado para crear una imagen de Docker que contenga un servidor de Code-Server con varias extensiones de VS Code preinstaladas.
 
