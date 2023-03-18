@@ -3,7 +3,7 @@ USER root
 # Establece la contraseña de acceso al servidor web
 ENV PASSWORD=pass123
 
-RUN sudo apt-get install -y supervisor
+RUN sudo apt-get update && sudo apt-get install -y supervisor
 # Instala las extensiones de VS Code
 RUN code-server --install-extension esbenp.prettier-vscode && \
     code-server --install-extension ms-python.python && \
@@ -14,7 +14,7 @@ RUN code-server --install-extension esbenp.prettier-vscode && \
 
 ## INSTALA TODO LOS PROGRAMAS NECESARIOS O LOS QUE NECESITES
 RUN curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-RUN sudo apt-get install -y supervisor nodejs
+RUN sudo apt-get install -y nodejs
 
 
 # Configuración de Supervisor
